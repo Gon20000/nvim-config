@@ -11,7 +11,7 @@ return  {
     lazy = false,
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "clangd", "solargraph" },
+        ensure_installed = { "clangd", "solargraph", "eslint" },
       })
     end,
   },

@@ -9,6 +9,8 @@ return {
     'L3MON4D3/LuaSnip',           -- Snippet engine
   },
   config = function ()
+    local snippet_path = vim.fn.stdpath("config") .. "/lua/lua_snippets"
+    require("luasnip.loaders.from_lua").lazy_load({ paths = snippet_path })
     require "configs.cmp"
   end
 }
